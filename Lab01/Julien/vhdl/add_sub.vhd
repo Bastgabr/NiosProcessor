@@ -14,34 +14,28 @@ entity add_sub is
 end add_sub;
 
 architecture synth of add_sub is
-signal result : std_logic_vector(32 downto 0):= (others => '0');
+	signal result : std_logic_vector(32 downto 0):= (others => '0');
 begin
-adder : process(a, b, sub_mode, result)
-variable a_complete : unsigned(32 downto 0);
-variable b_complete : unsigned(32 downto 0);
-begin
-a_complete  := resize(unsigned(a), 33);
-if(sub_mode='0') then
-b_complete  := resize(unsigned(b), 33);
-else
-b_complete  := resize(unsigned(not b), 33);
-b_complete := b_complete +1;
-end if;
-result <= std_logic_vector(a_complete + b_complete);
-r <= result(31 downto 0);
-carry <= result(result'left);
+	adder : process(a, b, sub_mode, result)
+		variable a_complete : unsigned(32 downto 0);
+		variable b_complete : unsigned(32 downto 0);
+	begin
+		a_complete  := resize(unsigned(a), 33);
+		if(sub_mode='0') then
+			b_complete  := resize(unsigned(b), 33);
+		else
+			b_complete  := resize(unsigned(not b), 33);
+			b_complete := b_complete +1;
+		end if;
+			result <= std_logic_vector(a_complete + b_complete);
 
-end process;
+			if(unsigned(result))=0 then 
+				zero <='1';
+			else
+				zero<='0';
+			end if;
+			r <= result(31 downto 0);
+			carry <= result(result'left);
 
-process(result)
-begin
-if(unsigned(result))=0
-then zero <='1';
-else
-zero<='0';
-end if;
-end process;
-
-
-
+	end process;
 end;
