@@ -29,7 +29,7 @@ begin
 		end if;
 			result <= std_logic_vector(a_complete + b_complete);
 
-			if(unsigned(result(31 downto 0))) = 0 then 
+			if(unsigned(result(31 downto 0)) = 0 then 
 				zero <= '1';
 			else
 				zero <= '0';
