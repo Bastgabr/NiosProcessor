@@ -1,0 +1,495 @@
+m255
+K3
+z0
+13
+cModel Technology
+Econtroller
+Z0 w1506206042
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 d/home/user/Desktop/TP3/modelsim
+Z5 8/home/user/Desktop/TP3/vhdl/Controller.vhd
+Z6 F/home/user/Desktop/TP3/vhdl/Controller.vhd
+l0
+L5
+VQNRdUR5N=bM4Yh<KB[Wah1
+!s100 EgmZX?@Hlj_:FT@1zk_WE3
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1507542298
+!i10b 1
+Z9 !s108 1507542297.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/vhdl/Controller.vhd|
+Z11 !s107 /home/user/Desktop/TP3/vhdl/Controller.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Asynth
+R1
+R2
+R3
+DEx4 work 10 controller 0 22 QNRdUR5N=bM4Yh<KB[Wah1
+l18
+L17
+VecYGEP=ze?5Men@=jVI<T1
+!s100 ma6P5AB>OVS>VVO5E:eiU0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edecoder
+Z14 w1507105390
+R1
+R2
+R3
+R4
+Z15 8/home/user/Desktop/TP3/vhdl/decoder.vhd
+Z16 F/home/user/Desktop/TP3/vhdl/decoder.vhd
+l0
+L5
+VU?AT>Z]mM@<^]6F2zNAK73
+!s100 E70XToNOKdM31o2OfPCQK3
+R7
+32
+R8
+!i10b 1
+Z17 !s108 1507542298.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/vhdl/decoder.vhd|
+Z19 !s107 /home/user/Desktop/TP3/vhdl/decoder.vhd|
+!i113 1
+R12
+R13
+Asynth
+R1
+R2
+R3
+DEx4 work 7 decoder 0 22 U?AT>Z]mM@<^]6F2zNAK73
+l15
+L14
+V8`5NVdO:@6RWmk=QXiUUN0
+!s100 UIk:cBX4okcijEDmGFz`e3
+R7
+32
+R8
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Efpga4u_with_controller
+Z20 w1476220134
+R2
+R3
+R4
+Z21 8/home/user/Desktop/TP3/vhdl/FPGA4U_with_controller.vhd
+Z22 F/home/user/Desktop/TP3/vhdl/FPGA4U_with_controller.vhd
+l0
+L24
+V=:f=j`>OO=61_Q:WX;AeN1
+!s100 `1RbW94><6J]8CK?H<fzS3
+R7
+32
+R8
+!i10b 1
+R17
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/vhdl/FPGA4U_with_controller.vhd|
+Z24 !s107 /home/user/Desktop/TP3/vhdl/FPGA4U_with_controller.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R2
+R3
+Z25 DEx4 work 22 fpga4u_with_controller 0 22 =:f=j`>OO=61_Q:WX;AeN1
+l97
+L33
+V<iXS`zZaco0^BPS_`^KnA0
+!s100 RcJMHfGX2QE:aLibWNebS2
+R7
+32
+R8
+!i10b 1
+R17
+R23
+R24
+!i113 1
+R12
+R13
+Efpga4u_without_controller
+Z26 w1476134000
+R2
+R3
+R4
+Z27 8/home/user/Desktop/TP3/vhdl/FPGA4U_without_controller.vhd
+Z28 F/home/user/Desktop/TP3/vhdl/FPGA4U_without_controller.vhd
+l0
+L24
+VFCoiMT1ozEjHKS<L095c@1
+!s100 69dai>]IQUYlKDS^l9;He1
+R7
+32
+R8
+!i10b 1
+R17
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/vhdl/FPGA4U_without_controller.vhd|
+Z30 !s107 /home/user/Desktop/TP3/vhdl/FPGA4U_without_controller.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R2
+R3
+Z31 DEx4 work 25 fpga4u_without_controller 0 22 FCoiMT1ozEjHKS<L095c@1
+l86
+L38
+V3eS^oHjd]:IN0nhaT]z9[0
+!s100 29N9S8[5?VkolAz4YIf:;2
+R7
+32
+R8
+!i10b 1
+R17
+R29
+R30
+!i113 1
+R12
+R13
+Eleds
+R26
+R1
+R2
+R3
+R4
+Z32 8/home/user/Desktop/TP3/vhdl/LEDs.vhd
+Z33 F/home/user/Desktop/TP3/vhdl/LEDs.vhd
+l0
+L5
+V82^IRfHNag^>;Yc>Z[nm>3
+!s100 LBhnQz<diU;5h1EbFfFEW1
+R7
+32
+R8
+!i10b 1
+R17
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/vhdl/LEDs.vhd|
+Z35 !s107 /home/user/Desktop/TP3/vhdl/LEDs.vhd|
+!i113 1
+R12
+R13
+Asynth
+R1
+R2
+R3
+DEx4 work 4 leds 0 22 82^IRfHNag^>;Yc>Z[nm>3
+l34
+L22
+Vj;cD^kSPz:JHjlD@L]j;81
+!s100 ^Eb^?kG1CKeS`DJCfdSl82
+R7
+32
+R8
+!i10b 1
+R17
+R34
+R35
+!i113 1
+R12
+R13
+Eram
+Z36 w1507541675
+R1
+R2
+R3
+R4
+Z37 8/home/user/Desktop/TP3/vhdl/RAM.vhd
+Z38 F/home/user/Desktop/TP3/vhdl/RAM.vhd
+l0
+L5
+VJiWAmLGUWmdVPB8L2QZ[D3
+!s100 9O>00CFElD4PLMkihiTWm3
+R7
+32
+R8
+!i10b 1
+R17
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/vhdl/RAM.vhd|
+Z40 !s107 /home/user/Desktop/TP3/vhdl/RAM.vhd|
+!i113 1
+R12
+R13
+Asynth
+R1
+R2
+R3
+DEx4 work 3 ram 0 22 JiWAmLGUWmdVPB8L2QZ[D3
+l19
+L16
+V]59>e6SRXc39UPaZ]bKl=1
+!s100 CAamol3>e1:Q[W`=]0KN72
+R7
+32
+R8
+!i10b 1
+R17
+R39
+R40
+!i113 1
+R12
+R13
+Eregister_file
+Z41 w1507100229
+R1
+R2
+R3
+R4
+Z42 8/home/user/Desktop/TP3/vhdl/register_file.vhd
+Z43 F/home/user/Desktop/TP3/vhdl/register_file.vhd
+l0
+L6
+V@FVRE@N_RhOVzNQOj7?LM1
+!s100 J3YZk8JWIZBBo<2aaBdbh1
+R7
+32
+R8
+!i10b 1
+R17
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/vhdl/register_file.vhd|
+Z45 !s107 /home/user/Desktop/TP3/vhdl/register_file.vhd|
+!i113 1
+R12
+R13
+Asynth
+R1
+R2
+R3
+DEx4 work 13 register_file 0 22 @FVRE@N_RhOVzNQOj7?LM1
+l23
+L19
+VBa7bhOmGf@=d<=oXm^W9=0
+!s100 ESFHYDP=nLIKK3;QU^`^k2
+R7
+32
+R8
+!i10b 1
+R17
+R44
+R45
+!i113 1
+R12
+R13
+Erom
+Z46 w1507542255
+R1
+R2
+R3
+R4
+Z47 8/home/user/Desktop/TP3/vhdl/ROM.vhd
+Z48 F/home/user/Desktop/TP3/vhdl/ROM.vhd
+l0
+L5
+V;HIY62b?IMTaL7>j?MTM@2
+!s100 ;HJP:4Pf6d9ca=B<]K[Bj1
+R7
+32
+R8
+!i10b 1
+R17
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/vhdl/ROM.vhd|
+Z50 !s107 /home/user/Desktop/TP3/vhdl/ROM.vhd|
+!i113 1
+R12
+R13
+Asynth
+Z51 DPx9 altera_mf 20 altera_mf_components 0 22 m2K6F5NmQKkFhQa^^]15g3
+Z52 DEx4 work 9 rom_block 0 22 U9c?^ehT?UHajSJOA:KS20
+R1
+R2
+R3
+DEx4 work 3 rom 0 22 ;HIY62b?IMTaL7>j?MTM@2
+l16
+L15
+Vo1^=RE@>BHRZaodGBO;kC3
+!s100 Q@^f5XYL^2CVXbVWcY^md0
+R7
+32
+R8
+!i10b 1
+R17
+R49
+R50
+!i113 1
+R12
+R13
+Erom_block
+Z53 w1507535469
+R51
+R2
+R3
+R4
+Z54 8/home/user/Desktop/TP3/vhdl/ROM_Block.vhd
+Z55 F/home/user/Desktop/TP3/vhdl/ROM_Block.vhd
+l0
+L43
+VU9c?^ehT?UHajSJOA:KS20
+!s100 ]8Q[GP[YlW48DPj49SUTX2
+R7
+32
+R8
+!i10b 1
+R17
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/vhdl/ROM_Block.vhd|
+Z57 !s107 /home/user/Desktop/TP3/vhdl/ROM_Block.vhd|
+!i113 1
+R12
+R13
+Asyn
+R51
+R2
+R3
+R52
+l57
+L53
+Vdz8?H@2VcQmfjP]M>KDcV0
+!s100 n6VVZjJK[^AQmOdziH^NR1
+R7
+32
+R8
+!i10b 1
+R17
+R56
+R57
+!i113 1
+R12
+R13
+Etb_controller
+R0
+R2
+R3
+R4
+Z58 8/home/user/Desktop/TP3/testbench/tb_controller.vhd
+Z59 F/home/user/Desktop/TP3/testbench/tb_controller.vhd
+l0
+L4
+ViJgDF5RR:zbcJ5A_GfFbF0
+!s100 28F?L_OHdPH3gH3B4nzCd1
+R7
+32
+R8
+!i10b 1
+R17
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/testbench/tb_controller.vhd|
+Z61 !s107 /home/user/Desktop/TP3/testbench/tb_controller.vhd|
+!i113 1
+R12
+R13
+Atestbench
+R25
+R2
+R3
+DEx4 work 13 tb_controller 0 22 iJgDF5RR:zbcJ5A_GfFbF0
+l13
+L7
+VPWiaV45Yf6[PVmi`KT2@T0
+!s100 WiZQfKkS[Zco`@HUXT1io0
+R7
+32
+R8
+!i10b 1
+R17
+R60
+R61
+!i113 1
+R12
+R13
+Etb_memories
+Z62 w1476133982
+R1
+R2
+R3
+R4
+Z63 8/home/user/Desktop/TP3/testbench/tb_memories.vhd
+Z64 F/home/user/Desktop/TP3/testbench/tb_memories.vhd
+l0
+L5
+V_[B`<1i^G3X9j`zn<9dcS1
+!s100 >eaMjaQUiFi7T3R9cd3^`0
+R7
+32
+Z65 !s110 1507542299
+!i10b 1
+R17
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/testbench/tb_memories.vhd|
+Z67 !s107 /home/user/Desktop/TP3/testbench/tb_memories.vhd|
+!i113 1
+R12
+R13
+Atestbench
+R31
+R1
+R2
+R3
+DEx4 work 11 tb_memories 0 22 _[B`<1i^G3X9j`zn<9dcS1
+l19
+L8
+VHU:`e0JJVh96^59cS[6]<1
+!s100 Qec@BZNh5SP611?l>lh_T3
+R7
+32
+R65
+!i10b 1
+R17
+R66
+R67
+!i113 1
+R12
+R13
+Etb_register_file
+R0
+R1
+R2
+R3
+R4
+Z68 8/home/user/Desktop/TP3/testbench/tb_register_file.vhd
+Z69 F/home/user/Desktop/TP3/testbench/tb_register_file.vhd
+l0
+L5
+V9dGOXn>gC30@lMD0]CZ;O3
+!s100 1`;gKjLez8z?IanM[D4a_3
+R7
+32
+R65
+!i10b 1
+Z70 !s108 1507542299.000000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/TP3/testbench/tb_register_file.vhd|
+Z72 !s107 /home/user/Desktop/TP3/testbench/tb_register_file.vhd|
+!i113 1
+R12
+R13
+Abench
+R1
+R2
+R3
+Z73 DEx4 work 16 tb_register_file 0 22 9dGOXn>gC30@lMD0]CZ;O3
+l21
+L8
+Z74 VamS0<VKb7EXVkZBSB09VT1
+Z75 !s100 V[j<7N15?0lf9jLDn@i950
+R7
+32
+R65
+!i10b 1
+R70
+R71
+R72
+!i113 1
+R12
+R13
