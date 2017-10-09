@@ -13,17 +13,21 @@ entity ROM is
 end ROM;
 
 architecture synth of ROM is
+signal rom_data : std_logic_vector(31 downto 0);
 begin
 ROM_Block : ENTITY work.ROM_Block port map(
-            address      => address,
+            address  => address,
              clock  => clk,
-             q   =>  rddata);
+             q   =>  rom_data);
 
 
-process(cs)
+process(clk, rom_data)
 begin
-if(cs = '0')
-then rddata <= (others => 'Z');
+if(rising_edge(clk) and cs='1' and read='1')
+then
+rddata <= rom_data;
+else
+rddata <= (others => 'Z');
 end if;
 end process;
 end synth;

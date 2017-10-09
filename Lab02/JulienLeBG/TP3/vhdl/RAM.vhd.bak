@@ -19,12 +19,14 @@ signal reg: reg_type;
 begin
 process(clk)
 begin
-if(rising_edge(clk)) then 
-if(cs = '1' and read = '1') then
-rddata <= reg(to_integer(unsigned(address)));
-elsif (cs = '1' and write ='1') then
-reg(to_integer(unsigned(address))) <= wrdata;
-end if;
-end if;
+--if(rising_edge(clk)) then 
+--if(cs = '1' and read = '1') then
+--rddata <= reg(to_integer(unsigned(address)));
+--elsif (cs = '1' and write ='1') then
+--reg(to_integer(unsigned(address))) <= wrdata;
+--else rddata <= (others => 'Z');
+--end if;
+--end if;
+rddata <= (others => 'Z');
 end process;
 end synth;
