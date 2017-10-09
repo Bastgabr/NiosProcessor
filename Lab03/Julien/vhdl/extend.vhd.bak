@@ -15,7 +15,7 @@ architecture synth of extend is
 begin
 
 	imm_extended (15 downto 0) <= imm16;
-	imm_extended (16) <= signed;
+	imm_extended (16 downto 16) <= signed;
 	imm_extended (31 downto 17) <= (others => '0');
 process 
 begin
