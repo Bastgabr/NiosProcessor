@@ -4,7 +4,7 @@ z0
 13
 cModel Technology
 Econtroller
-Z0 w1506206042
+Z0 w1507549031
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -17,9 +17,9 @@ VQNRdUR5N=bM4Yh<KB[Wah1
 !s100 EgmZX?@Hlj_:FT@1zk_WE3
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1507549444
+Z8 !s110 1507549588
 !i10b 1
-Z9 !s108 1507549444.000000
+Z9 !s108 1507549588.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/Controller.vhd|
 Z11 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/Controller.vhd|
 !i113 1
@@ -45,13 +45,13 @@ R11
 R12
 R13
 Edecoder
-Z14 w1507105390
+R0
 R1
 R2
 R3
 R4
-Z15 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/decoder.vhd
-Z16 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/decoder.vhd
+Z14 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/decoder.vhd
+Z15 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/decoder.vhd
 l0
 L5
 VU?AT>Z]mM@<^]6F2zNAK73
@@ -61,8 +61,8 @@ R7
 R8
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/decoder.vhd|
-Z18 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/decoder.vhd|
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/decoder.vhd|
+Z17 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/decoder.vhd|
 !i113 1
 R12
 R13
@@ -80,18 +80,18 @@ R7
 R8
 !i10b 1
 R9
+R16
 R17
-R18
 !i113 1
 R12
 R13
 Efpga4u_with_controller
-Z19 w1476220134
+R0
 R2
 R3
 R4
-Z20 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_with_controller.vhd
-Z21 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_with_controller.vhd
+Z18 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_with_controller.vhd
+Z19 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_with_controller.vhd
 l0
 L24
 V=:f=j`>OO=61_Q:WX;AeN1
@@ -101,15 +101,15 @@ R7
 R8
 !i10b 1
 R9
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_with_controller.vhd|
-Z23 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_with_controller.vhd|
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_with_controller.vhd|
+Z21 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_with_controller.vhd|
 !i113 1
 R12
 R13
 Abdf_type
 R2
 R3
-Z24 DEx4 work 22 fpga4u_with_controller 0 22 =:f=j`>OO=61_Q:WX;AeN1
+Z22 DEx4 work 22 fpga4u_with_controller 0 22 =:f=j`>OO=61_Q:WX;AeN1
 l97
 L33
 V<iXS`zZaco0^BPS_`^KnA0
@@ -119,18 +119,18 @@ R7
 R8
 !i10b 1
 R9
-R22
-R23
+R20
+R21
 !i113 1
 R12
 R13
 Efpga4u_without_controller
-Z25 w1476134000
+R0
 R2
 R3
 R4
-Z26 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_without_controller.vhd
-Z27 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_without_controller.vhd
+Z23 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_without_controller.vhd
+Z24 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_without_controller.vhd
 l0
 L24
 VFCoiMT1ozEjHKS<L095c@1
@@ -140,15 +140,15 @@ R7
 R8
 !i10b 1
 R9
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_without_controller.vhd|
-Z29 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_without_controller.vhd|
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_without_controller.vhd|
+Z26 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/FPGA4U_without_controller.vhd|
 !i113 1
 R12
 R13
 Abdf_type
 R2
 R3
-Z30 DEx4 work 25 fpga4u_without_controller 0 22 FCoiMT1ozEjHKS<L095c@1
+Z27 DEx4 work 25 fpga4u_without_controller 0 22 FCoiMT1ozEjHKS<L095c@1
 l86
 L38
 V3eS^oHjd]:IN0nhaT]z9[0
@@ -158,19 +158,19 @@ R7
 R8
 !i10b 1
 R9
-R28
-R29
+R25
+R26
 !i113 1
 R12
 R13
 Eleds
-Z31 w1507547676
+R0
 R1
 R2
 R3
 R4
-Z32 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/LEDs.vhd
-Z33 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/LEDs.vhd
+Z28 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/LEDs.vhd
+Z29 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/LEDs.vhd
 l0
 L5
 V82^IRfHNag^>;Yc>Z[nm>3
@@ -180,8 +180,8 @@ R7
 R8
 !i10b 1
 R9
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/LEDs.vhd|
-Z35 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/LEDs.vhd|
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/LEDs.vhd|
+Z31 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/LEDs.vhd|
 !i113 1
 R12
 R13
@@ -199,30 +199,30 @@ R7
 R8
 !i10b 1
 R9
-R34
-R35
+R30
+R31
 !i113 1
 R12
 R13
 Eram
-Z36 w1507549442
+R0
 R1
 R2
 R3
 R4
-Z37 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/RAM.vhd
-Z38 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/RAM.vhd
+Z32 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/RAM.vhd
+Z33 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/RAM.vhd
 l0
 L5
 VJiWAmLGUWmdVPB8L2QZ[D3
 !s100 9O>00CFElD4PLMkihiTWm3
 R7
 32
-R8
+Z34 !s110 1507549589
 !i10b 1
 R9
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/RAM.vhd|
-Z40 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/RAM.vhd|
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/RAM.vhd|
+Z36 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/RAM.vhd|
 !i113 1
 R12
 R13
@@ -237,33 +237,33 @@ V]59>e6SRXc39UPaZ]bKl=1
 !s100 CAamol3>e1:Q[W`=]0KN72
 R7
 32
-R8
+R34
 !i10b 1
 R9
-R39
-R40
+R35
+R36
 !i113 1
 R12
 R13
 Eregister_file
-Z41 w1507100229
+Z37 w1507549587
 R1
 R2
 R3
 R4
-Z42 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/register_file.vhd
-Z43 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/register_file.vhd
+Z38 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/register_file.vhd
+Z39 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/register_file.vhd
 l0
 L6
 V@FVRE@N_RhOVzNQOj7?LM1
 !s100 J3YZk8JWIZBBo<2aaBdbh1
 R7
 32
-R8
+R34
 !i10b 1
-R9
-Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/register_file.vhd|
-Z45 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/register_file.vhd|
+Z40 !s108 1507549589.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/register_file.vhd|
+Z42 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/register_file.vhd|
 !i113 1
 R12
 R13
@@ -274,42 +274,42 @@ R3
 DEx4 work 13 register_file 0 22 @FVRE@N_RhOVzNQOj7?LM1
 l23
 L19
-VBa7bhOmGf@=d<=oXm^W9=0
-!s100 ESFHYDP=nLIKK3;QU^`^k2
+V1JRXY9[_=V0KeEmARdCWl1
+!s100 @9O9XAL@TPA9bez@V^iXi1
 R7
 32
-R8
+R34
 !i10b 1
-R9
-R44
-R45
+R40
+R41
+R42
 !i113 1
 R12
 R13
 Erom
-Z46 w1507549375
+Z43 w1507548667
 R1
 R2
 R3
 R4
-Z47 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM.vhd
-Z48 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM.vhd
+Z44 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM.vhd
+Z45 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM.vhd
 l0
 L5
 V;HIY62b?IMTaL7>j?MTM@2
 !s100 ;HJP:4Pf6d9ca=B<]K[Bj1
 R7
 32
-R8
+R34
 !i10b 1
-R9
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM.vhd|
-Z50 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM.vhd|
+R40
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM.vhd|
+Z47 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM.vhd|
 !i113 1
 R12
 R13
 Asynth
-Z51 DEx4 work 9 rom_block 0 22 Cf[gZ]hQBZigaT1P:e9O01
+Z48 DEx4 work 9 rom_block 0 22 Cf[gZ]hQBZigaT1P:e9O01
 R1
 R2
 R3
@@ -320,50 +320,50 @@ V3o<9^<hYz<OMPJ@];G8AE0
 !s100 3A2[7jTPk`;90LbemY]<d1
 R7
 32
-R8
+R34
 !i10b 1
-R9
-R49
-R50
+R40
+R46
+R47
 !i113 1
 R12
 R13
 Erom_block
-Z52 w1476134002
+R43
 R2
 R3
 R4
-Z53 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM_Block.vhd
-Z54 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM_Block.vhd
+Z49 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM_Block.vhd
+Z50 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM_Block.vhd
 l0
 L42
 VCf[gZ]hQBZigaT1P:e9O01
 !s100 Fb1^C3b1G3KcM]0dFoPHV2
 R7
 32
-R8
+R34
 !i10b 1
-R9
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM_Block.vhd|
-Z56 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM_Block.vhd|
+R40
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM_Block.vhd|
+Z52 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/vhdl/ROM_Block.vhd|
 !i113 1
 R12
 R13
 Asyn
 R2
 R3
-R51
+R48
 l82
 L52
 VZKBR7P0EaE;PJMf_Ho4411
 !s100 2O9W8o5<`cI7Pb0TBCEoL0
 R7
 32
-R8
+R34
 !i10b 1
-R9
-R55
-R56
+R40
+R51
+R52
 !i113 1
 R12
 R13
@@ -372,24 +372,24 @@ R0
 R2
 R3
 R4
-Z57 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_controller.vhd
-Z58 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_controller.vhd
+Z53 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_controller.vhd
+Z54 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_controller.vhd
 l0
 L4
 ViJgDF5RR:zbcJ5A_GfFbF0
 !s100 28F?L_OHdPH3gH3B4nzCd1
 R7
 32
-R8
+R34
 !i10b 1
-R9
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_controller.vhd|
-Z60 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_controller.vhd|
+R40
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_controller.vhd|
+Z56 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_controller.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R24
+R22
 R2
 R3
 DEx4 work 13 tb_controller 0 22 iJgDF5RR:zbcJ5A_GfFbF0
@@ -399,38 +399,38 @@ VPWiaV45Yf6[PVmi`KT2@T0
 !s100 WiZQfKkS[Zco`@HUXT1io0
 R7
 32
-R8
+R34
 !i10b 1
-R9
-R59
-R60
+R40
+R55
+R56
 !i113 1
 R12
 R13
 Etb_memories
-Z61 w1476133982
+R0
 R1
 R2
 R3
 R4
-Z62 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_memories.vhd
-Z63 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_memories.vhd
+Z57 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_memories.vhd
+Z58 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_memories.vhd
 l0
 L5
 V_[B`<1i^G3X9j`zn<9dcS1
 !s100 >eaMjaQUiFi7T3R9cd3^`0
 R7
 32
-R8
+R34
 !i10b 1
-R9
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_memories.vhd|
-Z65 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_memories.vhd|
+R40
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_memories.vhd|
+Z60 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_memories.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R30
+R27
 R1
 R2
 R3
@@ -441,11 +441,11 @@ VHU:`e0JJVh96^59cS[6]<1
 !s100 Qec@BZNh5SP611?l>lh_T3
 R7
 32
-R8
+R34
 !i10b 1
-R9
-R64
-R65
+R40
+R59
+R60
 !i113 1
 R12
 R13
@@ -455,19 +455,19 @@ R1
 R2
 R3
 R4
-Z66 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_register_file.vhd
-Z67 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_register_file.vhd
+Z61 8/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_register_file.vhd
+Z62 F/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_register_file.vhd
 l0
 L5
 V9dGOXn>gC30@lMD0]CZ;O3
 !s100 1`;gKjLez8z?IanM[D4a_3
 R7
 32
-R8
+R34
 !i10b 1
-R9
-Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_register_file.vhd|
-Z69 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_register_file.vhd|
+R40
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_register_file.vhd|
+Z64 !s107 /home/user/Desktop/ArchOrd/Lab02/JulienLeBG/TP3/testbench/tb_register_file.vhd|
 !i113 1
 R12
 R13
@@ -475,18 +475,18 @@ Abench
 R1
 R2
 R3
-Z70 DEx4 work 16 tb_register_file 0 22 9dGOXn>gC30@lMD0]CZ;O3
+Z65 DEx4 work 16 tb_register_file 0 22 9dGOXn>gC30@lMD0]CZ;O3
 l21
 L8
-Z71 VamS0<VKb7EXVkZBSB09VT1
-Z72 !s100 V[j<7N15?0lf9jLDn@i950
+Z66 VamS0<VKb7EXVkZBSB09VT1
+Z67 !s100 V[j<7N15?0lf9jLDn@i950
 R7
 32
-R8
+R34
 !i10b 1
-R9
-R68
-R69
+R40
+R63
+R64
 !i113 1
 R12
 R13
