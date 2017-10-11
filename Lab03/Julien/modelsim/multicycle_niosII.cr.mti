@@ -1,4 +1,13 @@
-../vhdl/ROM_Block.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/user/Desktop/ArchOrd/Lab03/Julien/vhdl/ROM_Block.vhd
+../vhdl/extend.vhd {2 {vcom -work work -2002 -explicit -stats=none /home/user/Desktop/ArchOrd/Lab03/Julien/vhdl/extend.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity extend
+-- Compiling architecture synth of extend
+** Warning: /home/user/Desktop/ArchOrd/Lab03/Julien/vhdl/extend.vhd(22): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+
+} {} {}} ../vhdl/ROM_Block.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/user/Desktop/ArchOrd/Lab03/Julien/vhdl/ROM_Block.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -177,14 +186,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity CPU
 -- Compiling architecture bdf_type of CPU
 
-} {} {}} ../vhdl/GECKO.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/user/Desktop/ArchOrd/Lab03/Julien/vhdl/GECKO.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity GECKO
--- Compiling architecture bdf_type of GECKO
-
 } {} {}} ../vhdl/mux2x32.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/user/Desktop/ArchOrd/Lab03/Julien/vhdl/mux2x32.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -192,6 +193,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package std_logic_1164
 -- Compiling entity mux2x32
 -- Compiling architecture synth of mux2x32
+
+} {} {}} ../vhdl/GECKO.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/user/Desktop/ArchOrd/Lab03/Julien/vhdl/GECKO.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity GECKO
+-- Compiling architecture bdf_type of GECKO
 
 } {} {}} ../testbench/tb_PC.vhd {2 {vcom -work work -2002 -explicit -stats=none /home/user/Desktop/ArchOrd/Lab03/Julien/testbench/tb_PC.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016

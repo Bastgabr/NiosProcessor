@@ -13,11 +13,8 @@ architecture synth of extend is
 	signal imm_extended : std_logic_vector(31 downto 0);
 
 begin
-
 	imm_extended (15 downto 0) <= imm16;
 	imm_extended (16) <= signed;
 	imm_extended (31 downto 17) <= (others => '0');
-process 
-begin
-end process;
+	imm32 <= imm_extended;
 end synth;
