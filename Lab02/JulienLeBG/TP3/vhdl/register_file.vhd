@@ -31,10 +31,12 @@ end process;
 write : process(clk)
 begin
 	if (rising_edge(clk)) then
+                
 		if(wren = '1')then
 		reg(to_integer(unsigned(aw))) <= wrdata;
-		reg(0) <= (others => '0');
+		
 		end if;
+              reg(0) <= (others => '0');
 	end if;
 end process;
 
