@@ -17,5 +17,18 @@ entity PC is
 end PC;
 
 architecture synth of PC is
+signal reg : integer;
 begin
+process(clk)
+begin
+if(rising_edge(clk)) then
+if(reset_n='1') then
+reg <= 0;
+end if;
+if(en = '1') then
+reg <= reg +4;
+end if;
+addr <= std_logic_vector(to_unsigned(reg, 16));
+end if;
+end process;
 end synth;
