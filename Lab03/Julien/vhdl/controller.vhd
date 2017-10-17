@@ -41,11 +41,5 @@ begin
 
 	process 
 	begin
-		if (rising_edge(clk) then
-			case op is
-			
-			when
-		
-		end if;
 	end process;
 end synth;
