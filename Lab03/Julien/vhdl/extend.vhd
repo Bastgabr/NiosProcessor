@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity extend is
     port(
@@ -13,8 +14,17 @@ architecture synth of extend is
 	signal imm_extended : std_logic_vector(31 downto 0);
 
 begin
-	imm_extended (15 downto 0) <= imm16;
-	imm_extended (16) <= signed;
-	imm_extended (31 downto 17) <= (others => '0');
+        process
+        variable temp : integer;
+        begin
+        if(signed = '0') then
+        imm_extended (15 downto 0) <= imm16;
+	imm_extended (31 downto 16) <= (others => '0');
 	imm32 <= imm_extended;
+        else 
+        temp := to_integer(unsigned(imm16));
+        imm32 <= std_logic_vector(to_signed(temp, 32));
+        end if;
+        end process;
+        
 end synth;
