@@ -50,7 +50,8 @@ architecture synth of controller is
 		read <= '0'; write <= '0';
 	
 		case current_state is 
-			when FETCH1 => next_state <= FETCH2;
+			when FETCH1 => next_state <= FETCH2; read<='1';
+
 			when FETCH2 => next_state <= DECODE; 
 				  ir_en <= '1';
 				  pc_en <= '1';
@@ -60,22 +61,22 @@ architecture synth of controller is
 				  elsif (op = "010101") then next_state <= STORE;
 				  else next_state <= I_OP;
 				  end if;
-			when I_OP => op_alu <= op; if (op = "011001" or op = "011010") then 
+			when I_OP => op_alu <= op; rf_wren <= '1'; if (op = "011001" or op = "011010") then 
 							imm_signed <= '1'; 
 							end if; 
 							next_state <= FETCH1;
-			when R_OP => op_alu <= opx; sel_b <= '1'; sel_rC <= '1'; next_state <= FETCH1;
-			when STORE => write <= '1'; next_state <= FETCH1;
+			when R_OP => op_alu <= opx; rf_wren <='1'; sel_b <= '1'; sel_rC <= '1'; next_state <= FETCH1;
+			when STORE => write <= '1'; next_state <= FETCH1; op_alu <= op;
 			when BREAK => next_state <= BREAK;
-			when LOAD1 => read <= '1'; sel_addr <= '1'; next_state <= LOAD2; 
-			when LOAD2 => sel_mem <= '1'; sel_addr <= '1'; next_state <= FETCH1;
+			when LOAD1 => read <= '1'; sel_addr <= '1'; next_state <= LOAD2;op_alu<=op; 
+			when LOAD2 => sel_mem <= '1'; rf_wren <='1'; sel_addr <= '1'; next_state <= FETCH1;
 			when others => null;
 		end case;		  
 		end process;
 	
 	process(clk, reset_n)
 	begin
-	if (reset_n = '1') then
+	if (reset_n = '0') then
 	current_state <= FETCH1;
 	elsif (rising_edge(clk)) then
 	current_state <= next_state;
