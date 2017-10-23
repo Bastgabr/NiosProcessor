@@ -1,3 +1,4 @@
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -19,19 +20,22 @@ end PC;
 architecture synth of PC is
 signal reg : integer;
 begin
-process(clk)
-begin
-if(rising_edge(clk)) then
-if(reset_n='1') then
-reg <= 0;
-end if;
-if(en = '1') then
-	if (add_imm = '1') then
-		reg <= reg + to_integer(unsigned(imm));
-	else 	reg <= reg + 4;
-	end if;
-end if;
-addr <= std_logic_vector(to_unsigned(reg, 16));
-end if;
-end process;
+	process(clk)
+	begin
+		if(rising_edge(clk)) then
+			if(reset_n = '1') then
+				reg <= 0;
+			elsif(en = '1') then
+				if (add_imm = '1') then
+					reg <= reg + to_integer(unsigned(imm));
+				else 	reg <= reg + 4;
+				end if;
+			elsif (sel_imm = '1') then
+				addr <= imm(13 downto 0) & "00";
+			elsif (sel_a = '1') then
+				reg <= to_integer(unsigned(a));
+			else addr <= std_logic_vector(to_unsigned(reg, 16));
+			end if;
+		end if;
+	end process;
 end synth;

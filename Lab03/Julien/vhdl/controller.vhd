@@ -37,65 +37,78 @@ entity controller is
 end controller;
 
 architecture synth of controller is
-	type state_type is (FETCH1, FETCH2, DECODE, STORE, I_OP, R_OP, LOAD1, LOAD2, BREAK);
+	type state_type is (FETCH1, FETCH2, DECODE, STORE, I_OP, R_OP, LOAD1, LOAD2, BREAK, BRANCH, CALL, JUMP, IR_OP, UI_OP, SHIFT);
 	signal current_state, next_state : state_type;
 	begin
 
-		process(current_state) 
+	transition_logic :process(current_state, op, opx) 
 		begin
-		-- set all outputs to 0
-		branch_op <= '0'; ir_en <= '0'; 
-		pc_add_imm <= '0'; pc_en <= '0'; pc_sel_a <= '0'; pc_sel_imm <= '0';
-		rf_wren <= '0'; sel_addr <= '0'; sel_b <= '0'; sel_mem <= '0'; sel_pc <= '0'; sel_ra <= '0'; sel_rC <= '0';
-		read <= '0'; write <= '0';
-	
 		case current_state is 
-			when FETCH1 => next_state <= FETCH2; read <= '1';
+			when FETCH1 => next_state <= FETCH2;
 			when FETCH2 => next_state <= DECODE;
-				  ir_en <= '1';
-				  pc_en <= '1';
 			when DECODE => if (op = "111010" and opx = "110100") then next_state <= BREAK;
 				  elsif (op = "111010") then next_state <= R_OP;
 				  elsif (op = "010111") then next_state <= LOAD1;
 				  elsif (op = "010101") then next_state <= STORE;
+				  elsif( op(2 downto 0) = "110") then next_state <= BRANCH;
+				  elsif (op = "000000") then next_state <= CALL;
+				--  elsif (op(5 downto 4) = "10") then next_state <= IR_OP;
 				  else next_state <= I_OP;
 				  end if;
-			when I_OP => if (op = "011001" or op = "011010") then 
-							end if; rf_wren <= '1';
-							next_state <= FETCH1;
-			when R_OP => sel_b <= '1'; sel_rC <= '1'; rf_wren <= '1'; next_state <= FETCH1;
-			when STORE => write <= '1'; sel_addr <= '1'; next_state <= FETCH1;
-			when BREAK => rf_wren <= '0'; ir_en <= '0'; pc_en <= '0'; next_state <= BREAK;
-			when LOAD1 => read <= '1'; sel_addr <= '1'; next_state <= LOAD2; 
-			when LOAD2 => sel_mem <= '1'; sel_rC <= '0'; rf_wren <= '1'; next_state <= FETCH1;
-			when others => null;
+			when BREAK => next_state <= BREAK;
+			when LOAD1 => next_state <= LOAD2; 
+			when others => next_state <= FETCH1;
 		end case;		  
 		end process;
 
-	alu_logic :process(op, opx)
-	begin
-		if (op = "111010") then
-			case opx is
-				when "001110" => op_alu <= "101101";
-				when "011011" => op_alu <= "110011"; imm_signed <= '0';
-				when others => null;
-			end case;
-		else case op is
-			when "000100" => op_alu <= "000000"; imm_signed <= '1';
-			when "010111" => imm_signed <= '1';
-			when "010101" => imm_signed <= '1';
-			when "000110" => branch_op <= '1';
-			when "001110" => branch_op <= '1'; op_alu <= "011001";
-			when "010110" => branch_op <= '1'; op_alu <= "011010";
-			when "011110" => branch_op <= '1'; op_alu <= "011011";
-			when "100110" => branch_op <= '1'; op_alu <= "011100";
-			when "101110" => branch_op <= '1'; op_alu <= "011101";
-			when "110110" => branch_op <= '1'; op_alu <= "011110";
+	alu_logic: process(op, opx)
+	begin	
+	op_alu <= (others => '0');
+		if (op = "111010") then -- R_TYPE
+			case opx(2 downto 0) is 
+				when "110" => op_alu <= "100" & opx(5 downto 3);
+				when "000" => op_alu <= "011" & opx(5 downto 3);
+				when "001" => if (op(5 downto 2) = "110") then op_alu <= "000" & opx(5 downto 3);
+							else op_alu <= "001" & opx(5 downto 3); 
+						end if;
+				when "011"|"010" => op_alu <= "110" & opx(5 downto 3);
+				when others => op_alu <= (others => '0');
+				end case;
+		elsif (op = "000110") then op_alu <= "011100"; --unconditionnal branch
+		else case op(2 downto 0) is -- I_TYPE
+			when "100" => if (op(5 downto 3) = "000") then 
+						op_alu <= (others => '0'); 
+				      else op_alu <= "100" & op(5 downto 3); 
+				      end if;
+			when "110" => op_alu <= "011" & op(5 downto 3);
 			when others => null;
 			end case;
 		end if;
-	
 	end process;
+
+	signal_logic: process(current_state, op, opx) begin
+		ir_en <= '0'; branch_op <= '0';
+		pc_add_imm <= '0'; pc_en <= '0'; pc_sel_a <= '0'; pc_sel_imm <= '0';
+		rf_wren <= '0'; sel_addr <= '0'; sel_b <= '0'; sel_mem <= '0'; sel_pc <= '0'; sel_ra <= '0'; sel_rC <= '0';
+		read <= '0'; write <= '0';
+
+		case current_state is 
+			when FETCH1 => read <= '1';
+			when FETCH2 => ir_en <= '1'; pc_en <= '1';
+			when I_OP => rf_wren <= '1';
+			when R_OP => sel_b <= '1'; sel_rC <= '1'; rf_wren <= '1';
+			when STORE => write <= '1'; sel_addr <= '1';
+			when BREAK => rf_wren <= '0'; ir_en <= '0'; pc_en <= '0';
+			when LOAD1 => read <= '1'; sel_addr <= '1';
+			when LOAD2 => sel_mem <= '1'; sel_rC <= '0'; rf_wren <= '1';
+			when BRANCH => branch_op <= '1';
+			when CALL => pc_sel_imm <= '1';
+			when JUMP => pc_en <= '1'; pc_sel_a <= '1';
+			when IR_OP => imm_signed <= '0'; sel_b <= '0';
+			when others => null;
+		end case;		  
+	end process;
+	
 	
 	dff : process(clk, reset_n)
 	begin
