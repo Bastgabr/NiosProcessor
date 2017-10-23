@@ -26,7 +26,10 @@ if(reset_n='1') then
 reg <= 0;
 end if;
 if(en = '1') then
-reg <= reg +4;
+	if (add_imm = '1') then
+		reg <= reg + to_integer(unsigned(imm));
+	else 	reg <= reg + 4;
+	end if;
 end if;
 addr <= std_logic_vector(to_unsigned(reg, 16));
 end if;

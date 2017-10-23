@@ -1,115 +1,2704 @@
 # Loading project multicycle_niosII
-# reading /opt/altera/modelsim_ase/linuxaloem/../modelsim.ini
-# Loading project blabal
 # Compile of buttons.vhd was successful.
 # Compile of controller.vhd was successful.
 # Compile of CPU.vhd was successful.
-# Compile of extend.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
 # Compile of GECKO.vhd was successful.
 # Compile of IR.vhd was successful.
 # Compile of mux2x5.vhd was successful.
 # Compile of mux2x16.vhd was successful.
 # Compile of mux2x32.vhd was successful.
-# Compile of PC.vhd was successful.
-# Compile of rgb_led96.vhd was successful.
-# Compile of Controller.vhd was successful.
-# Compile of decoder.vhd was successful.
-# Compile of FPGA4U_with_controller.vhd was successful.
-# Compile of FPGA4U_without_controller.vhd was successful.
-# Compile of LEDs.vhd was successful.
-# Compile of RAM.vhd was successful.
-# Compile of register_file.vhd was successful.
-# Compile of rgb_led96.vhd was successful.
-# Compile of ROM.vhd failed with 4 errors.
-# Compile of ROM_Block.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
 # Compile of add_sub.vhd was successful.
 # Compile of ALU.vhd was successful.
 # Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
 # Compile of logic_unit.vhd was successful.
 # Compile of multiplexer.vhd was successful.
-# Compile of shift_unit.vhd was successful.
-# 27 compiles, 1 failed with 4 errors.
-# Compile of buttons.vhd was successful.
-# Compile of controller.vhd was successful.
-# Compile of CPU.vhd was successful.
-# Compile of extend.vhd was successful.
-# Compile of GECKO.vhd was successful.
-# Compile of IR.vhd was successful.
-# Compile of mux2x5.vhd was successful.
-# Compile of mux2x16.vhd was successful.
-# Compile of mux2x32.vhd was successful.
-# Compile of PC.vhd was successful.
-# Compile of rgb_led96.vhd was successful.
-# Compile of Controller.vhd was successful.
-# Compile of decoder.vhd was successful.
-# Compile of FPGA4U_with_controller.vhd was successful.
-# Compile of FPGA4U_without_controller.vhd was successful.
-# Compile of LEDs.vhd was successful.
 # Compile of RAM.vhd was successful.
 # Compile of register_file.vhd was successful.
-# Compile of rgb_led96.vhd was successful.
 # Compile of ROM.vhd was successful.
 # Compile of ROM_Block.vhd was successful.
-# Compile of add_sub.vhd was successful.
-# Compile of ALU.vhd was successful.
-# Compile of comparator.vhd was successful.
-# Compile of logic_unit.vhd was successful.
-# Compile of multiplexer.vhd was successful.
 # Compile of shift_unit.vhd was successful.
-# 27 compiles, 0 failed with no errors.
+# 28 compiles, 0 failed with no errors.
+# Load canceled
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:35 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 17:08:35 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:35 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 17:08:36 on Oct 23,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:36 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 17:08:36 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 17:08:36 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# ===================================================================
+# IR has not been activated... Simulation aborted.
+# ===================================================================
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
 # Compile of buttons.vhd was successful.
 # Compile of controller.vhd was successful.
 # Compile of CPU.vhd was successful.
-# Compile of extend.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
 # Compile of GECKO.vhd was successful.
 # Compile of IR.vhd was successful.
 # Compile of mux2x5.vhd was successful.
 # Compile of mux2x16.vhd was successful.
 # Compile of mux2x32.vhd was successful.
-# Compile of PC.vhd was successful.
-# Compile of rgb_led96.vhd was successful.
-# Compile of Controller.vhd was successful.
-# Compile of decoder.vhd was successful.
-# Compile of FPGA4U_with_controller.vhd was successful.
-# Compile of FPGA4U_without_controller.vhd was successful.
-# Compile of LEDs.vhd was successful.
-# Compile of RAM.vhd was successful.
-# Compile of register_file.vhd was successful.
-# Compile of rgb_led96.vhd was successful.
-# Compile of ROM.vhd was successful.
-# Compile of ROM_Block.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
 # Compile of add_sub.vhd was successful.
 # Compile of ALU.vhd was successful.
 # Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
 # Compile of logic_unit.vhd was successful.
 # Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
 # Compile of shift_unit.vhd was successful.
-# 27 compiles, 0 failed with no errors.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:11:12 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 17:11:12 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:11:12 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 17:11:12 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:11:12 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 17:11:12 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 17:11:13 on Oct 23,2017, Elapsed time: 0:02:37
+# Errors: 0, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 17:11:13 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# ** Error: Unexpected output value for read
+#    Time: 12500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for op_alu
+#    Time: 22500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 22500 ps  Iteration: 1  Instance: /tb_controller
+# --srl
+# ** Error: Unexpected output value for read
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for op_alu
+#    Time: 42500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 42500 ps  Iteration: 1  Instance: /tb_controller
+# --addi
+# ** Error: Unexpected output value for read
+#    Time: 52500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# --ldw
+# ** Error: Unexpected output value for read
+#    Time: 72500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# --stw
+# ** Error: Unexpected output value for read
+#    Time: 97500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_addr
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# --break
+# ** Error: Unexpected output value for read
+#    Time: 117500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ** Error: Unexpected output value for read
+#    Time: 167500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for op_alu
+#    Time: 177500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 177500 ps  Iteration: 1  Instance: /tb_controller
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
 # Compile of buttons.vhd was successful.
 # Compile of controller.vhd was successful.
 # Compile of CPU.vhd was successful.
-# Compile of extend.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
 # Compile of GECKO.vhd was successful.
 # Compile of IR.vhd was successful.
 # Compile of mux2x5.vhd was successful.
 # Compile of mux2x16.vhd was successful.
 # Compile of mux2x32.vhd was successful.
-# Compile of PC.vhd was successful.
-# Compile of rgb_led96.vhd was successful.
-# Compile of Controller.vhd was successful.
-# Compile of decoder.vhd was successful.
-# Compile of FPGA4U_with_controller.vhd was successful.
-# Compile of FPGA4U_without_controller.vhd was successful.
-# Compile of LEDs.vhd was successful.
-# Compile of RAM.vhd was successful.
-# Compile of register_file.vhd was successful.
-# Compile of rgb_led96.vhd was successful.
-# Compile of ROM.vhd was successful.
-# Compile of ROM_Block.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
 # Compile of add_sub.vhd was successful.
 # Compile of ALU.vhd was successful.
 # Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
 # Compile of logic_unit.vhd was successful.
 # Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
 # Compile of shift_unit.vhd was successful.
-# 27 compiles, 0 failed with no errors.
+# 28 compiles, 0 failed with no errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+# Compile of controller.vhd failed with 7 errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd failed with 7 errors.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 1 failed with 7 errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd failed with 5 errors.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 1 failed with 5 errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd failed with 4 errors.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 1 failed with 4 errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do Controller
+# Cannot open macro file: Controller
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:14:04 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:14:04 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:14:04 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:14:04 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:14:04 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:14:04 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:14:05 on Oct 23,2017, Elapsed time: 1:02:52
+# Errors: 22, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:14:05 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# ** Error: Unexpected output value for write
+#    Time: 2500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ** Error: Unexpected output value for write
+#    Time: 7500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 12500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 12500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 17500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 22500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 22500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_b
+#    Time: 22500 ps  Iteration: 1  Instance: /tb_controller
+# --srl
+# ** Error: Unexpected output value for write
+#    Time: 27500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 37500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 42500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 42500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_b
+#    Time: 42500 ps  Iteration: 1  Instance: /tb_controller
+# --addi
+# ** Error: Unexpected output value for write
+#    Time: 47500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 52500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 52500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 57500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_b
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# --ldw
+# ** Error: Unexpected output value for write
+#    Time: 67500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 72500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 72500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 77500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# --stw
+# ** Error: Unexpected output value for write
+#    Time: 92500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 97500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 97500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 102500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_addr
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# --break
+# ** Error: Unexpected output value for write
+#    Time: 112500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 117500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 117500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 122500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 132500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 142500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 147500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 152500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 157500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ** Error: Unexpected output value for write
+#    Time: 162500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 167500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 167500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 172500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 177500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 177500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_b
+#    Time: 177500 ps  Iteration: 1  Instance: /tb_controller
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:16:15 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:16:15 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:16:15 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:16:15 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:16:15 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:16:15 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:16:16 on Oct 23,2017, Elapsed time: 0:02:11
+# Errors: 58, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:16:16 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# ** Error: Unexpected output value for write
+#    Time: 2500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ** Error: Unexpected output value for write
+#    Time: 7500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 7500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 12500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 17500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 17500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 17500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_mem
+#    Time: 17500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 17500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_rC
+#    Time: 17500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_b
+#    Time: 17500 ps  Iteration: 1  Instance: /tb_controller
+# --srl
+# ** Error: Unexpected output value for write
+#    Time: 22500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 22500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 27500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_mem
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_rC
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_b
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# --addi
+# ** Error: Unexpected output value for write
+#    Time: 37500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 37500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 42500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 47500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 47500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 47500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_mem
+#    Time: 47500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_b
+#    Time: 47500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_rC
+#    Time: 47500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 47500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 47500 ps  Iteration: 1  Instance: /tb_controller
+# --ldw
+# ** Error: Unexpected output value for write
+#    Time: 52500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 52500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 57500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_b
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_addr
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 67500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 67500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 67500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_mem
+#    Time: 67500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 67500 ps  Iteration: 1  Instance: /tb_controller
+# --stw
+# ** Error: Unexpected output value for write
+#    Time: 72500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 72500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 77500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_b
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_addr
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# --break
+# ** Error: Unexpected output value for write
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 92500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 97500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 97500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 97500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 102500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 102500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 102500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 112500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 112500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 112500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 117500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 117500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 117500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 122500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 122500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 122500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ** Error: Unexpected output value for write
+#    Time: 132500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for read
+#    Time: 132500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for write
+#    Time: 142500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 142500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 142500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_mem
+#    Time: 142500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 142500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_rC
+#    Time: 142500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_b
+#    Time: 142500 ps  Iteration: 1  Instance: /tb_controller
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:20:38 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:20:38 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:20:39 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:20:39 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:20:39 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:20:39 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:20:40 on Oct 23,2017, Elapsed time: 0:04:24
+# Errors: 88, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:20:40 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# ** Error: Unexpected output value for read
+#    Time: 12500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 22500 ps  Iteration: 1  Instance: /tb_controller
+# --srl
+# ** Error: Unexpected output value for read
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 42500 ps  Iteration: 1  Instance: /tb_controller
+# --addi
+# ** Error: Unexpected output value for read
+#    Time: 52500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# --ldw
+# ** Error: Unexpected output value for read
+#    Time: 72500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# --stw
+# ** Error: Unexpected output value for read
+#    Time: 97500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_addr
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# --break
+# ** Error: Unexpected output value for read
+#    Time: 117500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ** Error: Unexpected output value for read
+#    Time: 167500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 177500 ps  Iteration: 1  Instance: /tb_controller
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:22:51 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:22:51 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:22:51 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:22:51 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:22:51 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:22:51 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:22:52 on Oct 23,2017, Elapsed time: 0:02:12
+# Errors: 18, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:22:52 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# ** Error: Unexpected output value for read
+#    Time: 12500 ps  Iteration: 1  Instance: /tb_controller
+# --srl
+# ** Error: Unexpected output value for read
+#    Time: 32500 ps  Iteration: 1  Instance: /tb_controller
+# --addi
+# ** Error: Unexpected output value for read
+#    Time: 52500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# --ldw
+# ** Error: Unexpected output value for read
+#    Time: 72500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# --stw
+# ** Error: Unexpected output value for read
+#    Time: 97500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for sel_addr
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# --break
+# ** Error: Unexpected output value for read
+#    Time: 117500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ** Error: Unexpected output value for read
+#    Time: 167500 ps  Iteration: 1  Instance: /tb_controller
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:03 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:25:03 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:03 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:25:03 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:03 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:25:03 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:25:04 on Oct 23,2017, Elapsed time: 0:02:12
+# Errors: 16, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:25:04 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# ** Error: Unexpected output value for imm_signed
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# --ldw
+# ** Error: Unexpected output value for imm_signed
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# --stw
+# ** Error: Unexpected output value for sel_addr
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# --break
+# ** Error: Unexpected output value for rf_wren
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:42 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:25:42 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:42 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:25:42 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:42 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:25:42 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:25:43 on Oct 23,2017, Elapsed time: 0:00:39
+# Errors: 9, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:25:43 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# ** Error: Unexpected output value for imm_signed
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# --ldw
+# ** Error: Unexpected output value for imm_signed
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# --stw
+# ** Error: Unexpected output value for sel_addr
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# --break
+# ** Error: Unexpected output value for rf_wren
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 147500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:26:18 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:26:18 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:26:18 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:26:18 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:26:18 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:26:18 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:26:19 on Oct 23,2017, Elapsed time: 0:00:36
+# Errors: 9, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:26:19 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# ** Error: Unexpected output value for imm_signed
+#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
+# --ldw
+# ** Error: Unexpected output value for imm_signed
+#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# --stw
+# ** Error: Unexpected output value for sel_addr
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for imm_signed
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# --break
+# ** Error: Unexpected output value for rf_wren
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 147500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:41 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:27:41 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:41 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:27:41 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:41 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:27:41 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:27:42 on Oct 23,2017, Elapsed time: 0:01:23
+# Errors: 9, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:27:42 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# --ldw
+# ** Error: Unexpected output value for rf_wren
+#    Time: 87500 ps  Iteration: 1  Instance: /tb_controller
+# --stw
+# ** Error: Unexpected output value for sel_addr
+#    Time: 107500 ps  Iteration: 1  Instance: /tb_controller
+# --break
+# ** Error: Unexpected output value for rf_wren
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 147500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:54 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:29:54 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:54 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:29:55 on Oct 23,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:55 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:29:55 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:29:56 on Oct 23,2017, Elapsed time: 0:02:14
+# Errors: 6, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:29:56 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# --ldw
+# --stw
+# --break
+# ** Error: Unexpected output value for rf_wren
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 147500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:31:04 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:31:04 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:31:04 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:31:04 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:31:04 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:31:04 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:31:05 on Oct 23,2017, Elapsed time: 0:01:09
+# Errors: 4, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:31:05 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# --ldw
+# --stw
+# --break
+# ** Error: Unexpected output value for rf_wren
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 147500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# WARNING: No extended dataflow license exists
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:34:51 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:34:51 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:34:51 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:34:51 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:34:51 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:34:51 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:34:52 on Oct 23,2017, Elapsed time: 0:03:47
+# Errors: 4, Warnings: 24
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:34:52 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# --ldw
+# --stw
+# --break
+# ** Error: Unexpected output value for rf_wren
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 147500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:35:05 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:35:05 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:35:05 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:35:05 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:35:05 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:35:05 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 18:35:06 on Oct 23,2017, Elapsed time: 0:00:14
+# Errors: 4, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:35:06 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# --ldw
+# --stw
+# --break
+# ** Error: Unexpected output value for rf_wren
+#    Time: 127500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for ir_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for pc_en
+#    Time: 137500 ps  Iteration: 1  Instance: /tb_controller
+# ** Error: Unexpected output value for rf_wren
+#    Time: 147500 ps  Iteration: 1  Instance: /tb_controller
+# --and
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/Desktop/ArchOrd/Lab03/Julien/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:36:24 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 18:36:24 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:36:24 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 18:36:24 on Oct 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:36:24 on Oct 23,2017
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 18:36:25 on Oct 23,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# End time: 18:36:25 on Oct 23,2017, Elapsed time: 0:01:19
+# Errors: 4, Warnings: 23
+# vsim tb_Controller -Gtext_in=Controller/in0.txt 
+# Start time: 18:36:25 on Oct 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# --ldw
+# --stw
+# --break
+# --and
+# ===================================================================
+# Simulation is successful
+# ===================================================================
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd failed with 4 errors.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 1 failed with 4 errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd failed with 2 errors.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 1 failed with 2 errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd failed with 2 errors.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 1 failed with 2 errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd failed with 3 errors.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 1 failed with 3 errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd failed with 2 errors.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 1 failed with 2 errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd failed with 18 errors.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 1 failed with 18 errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
+# Compile of buttons.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of extend.vhd was successful with warnings.
+# Compile of GECKO.vhd was successful.
+# Compile of IR.vhd was successful.
+# Compile of mux2x5.vhd was successful.
+# Compile of mux2x16.vhd was successful.
+# Compile of mux2x32.vhd was successful.
+# Compile of PC.vhd was successful with warnings.
+# Compile of check_functions.vhd was successful with warnings.
+# Compile of tb_Controller.vhd was successful with warnings.
+# Compile of tb_Extend.vhd was successful with warnings.
+# Compile of tb_GECKO.vhd was successful.
+# Compile of tb_IR.vhd was successful with warnings.
+# Compile of tb_PC.vhd was successful with warnings.
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of LEDs.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of register_file.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# 28 compiles, 0 failed with no errors.
