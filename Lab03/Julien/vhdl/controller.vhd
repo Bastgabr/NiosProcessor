@@ -37,7 +37,7 @@ entity controller is
 end controller;
 
 architecture synth of controller is
-	type state_type is (FETCH1, FETCH2, DECODE, STORE, I_OP, R_OP, LOAD1, LOAD2, BREAK, BRANCH, CALL, JUMP, IR_OP, UI_OP, SHIFT);
+	type state_type is (FETCH1, FETCH2, DECODE, STORE, I_OP, R_OP, LOAD1, LOAD2, BREAK, BRANCH, CALL, JUMP, RI_OP, UI_OP, SHIFT);
 	signal current_state, next_state : state_type;
 	begin
 
@@ -47,12 +47,14 @@ architecture synth of controller is
 			when FETCH1 => next_state <= FETCH2;
 			when FETCH2 => next_state <= DECODE;
 			when DECODE => if (op = "111010" and opx = "110100") then next_state <= BREAK;
+				  elsif (op = "111010" and opx(2 downto 0) = "010") then next_state <= RI_OP;
+				  elsif (op = "111010" and (opx = "001101" or opx = "000101")) then next_state <= JUMP;
 				  elsif (op = "111010") then next_state <= R_OP;
 				  elsif (op = "010111") then next_state <= LOAD1;
 				  elsif (op = "010101") then next_state <= STORE;
 				  elsif( op(2 downto 0) = "110") then next_state <= BRANCH;
 				  elsif (op = "000000") then next_state <= CALL;
-				--  elsif (op(5 downto 4) = "10") then next_state <= IR_OP;
+				  elsif(op = "001100" or op = "010100" or op = "011100") then next_state <= UI_OP;
 				  else next_state <= I_OP;
 				  end if;
 			when BREAK => next_state <= BREAK;
@@ -68,19 +70,21 @@ architecture synth of controller is
 			case opx(2 downto 0) is 
 				when "110" => op_alu <= "100" & opx(5 downto 3);
 				when "000" => op_alu <= "011" & opx(5 downto 3);
-				when "001" => if (op(5 downto 2) = "110") then op_alu <= "000" & opx(5 downto 3);
+				when "001" => if (opx(5 downto 3) = "110") then op_alu <= "000000"; --& opx(5 downto 3);
 							else op_alu <= "001" & opx(5 downto 3); 
 						end if;
 				when "011"|"010" => op_alu <= "110" & opx(5 downto 3);
 				when others => op_alu <= (others => '0');
 				end case;
-		elsif (op = "000110") then op_alu <= "011100"; --unconditionnal branch
+		elsif (op = "000110") then op_alu <= "011100"; -- unconditionnal branch
 		else case op(2 downto 0) is -- I_TYPE
 			when "100" => if (op(5 downto 3) = "000") then 
 						op_alu <= (others => '0'); 
 				      else op_alu <= "100" & op(5 downto 3); 
 				      end if;
 			when "110" => op_alu <= "011" & op(5 downto 3);
+			when "011" => op_alu <= "110" & op(5 downto 3);
+			when "000" => op_alu <= "011" & op(5 downto 3);
 			when others => null;
 			end case;
 		end if;
@@ -95,16 +99,17 @@ architecture synth of controller is
 		case current_state is 
 			when FETCH1 => read <= '1';
 			when FETCH2 => ir_en <= '1'; pc_en <= '1';
-			when I_OP => rf_wren <= '1';
+			when I_OP => rf_wren <= '1'; imm_signed <= '1';
 			when R_OP => sel_b <= '1'; sel_rC <= '1'; rf_wren <= '1';
-			when STORE => write <= '1'; sel_addr <= '1';
+			when STORE => write <= '1'; sel_addr <= '1'; imm_signed <= '1';
 			when BREAK => rf_wren <= '0'; ir_en <= '0'; pc_en <= '0';
-			when LOAD1 => read <= '1'; sel_addr <= '1';
+			when LOAD1 => read <= '1'; sel_addr <= '1'; imm_signed <= '1';
 			when LOAD2 => sel_mem <= '1'; sel_rC <= '0'; rf_wren <= '1';
-			when BRANCH => branch_op <= '1';
-			when CALL => pc_sel_imm <= '1';
-			when JUMP => pc_en <= '1'; pc_sel_a <= '1';
-			when IR_OP => imm_signed <= '0'; sel_b <= '0';
+			when BRANCH => branch_op <= '1'; sel_b <= '1'; pc_add_imm <= '1';
+			when CALL => pc_sel_imm <= '1'; pc_en <= '1'; rf_wren <= '1'; sel_pc <= '1'; sel_ra <= '1'; pc_sel_a <= '0';
+			when JUMP => pc_en <= '1'; pc_sel_a <= '1'; rf_wren <= '0';
+			when RI_OP => imm_signed <= '0'; sel_b <= '0'; rf_wren <= '1'; sel_rC <= '1';
+			WHEN UI_OP => imm_signed <= '0'; rf_wren <= '1';
 			when others => null;
 		end case;		  
 	end process;
