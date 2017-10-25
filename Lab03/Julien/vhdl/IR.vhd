@@ -11,16 +11,14 @@ entity IR is
 end IR;
 
 architecture synth of IR is
-	signal current_state : std_logic_vector(31 downto 0);
 begin
 
 	dff :process(clk)
 	begin
 		if (rising_edge(clk)) then
 			if (enable = '1') then
-			current_state <= D;
+			Q <= D;
 			end if;
-		Q <= current_state;
 		end if;
 	end process;
 
