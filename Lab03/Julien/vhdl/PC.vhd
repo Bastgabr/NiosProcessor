@@ -25,16 +25,21 @@ begin
 		if(rising_edge(clk)) then
 			if(reset_n = '1') then
 				reg <= 0;
+
 			elsif(en = '1') then
 				if (add_imm = '1') then
 					reg <= reg + to_integer(unsigned(imm));
-				else 	reg <= reg + 4;
+				
+				elsif (sel_imm = '1') then
+					addr <= imm(13 downto 0) & "00";
+
+				elsif (sel_a = '1') then
+					reg <= to_integer(unsigned(a));
+
+				else  reg <= reg + 4;
 				end if;
-			elsif (sel_imm = '1') then
-				addr <= imm(13 downto 0) & "00";
-			elsif (sel_a = '1') then
-				reg <= to_integer(unsigned(a));
-			else addr <= std_logic_vector(to_unsigned(reg, 16));
+
+			else addr <= std_logic_vector(to_unsigned(reg, 32));
 			end if;
 		end if;
 	end process;
