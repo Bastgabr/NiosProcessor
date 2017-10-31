@@ -97,8 +97,8 @@ architecture synth of controller is
 		read <= '0'; write <= '0';
 
 		case current_state is 
-			when FETCH1 => read <= '1';
-			when FETCH2 => ir_en <= '1'; pc_en <= '1';
+			when FETCH1 => read <= '1'; 
+			when FETCH2 => ir_en <= '1'; pc_en <='1';
 			when I_OP => rf_wren <= '1'; imm_signed <= '1';
 			when R_OP => sel_b <= '1'; sel_rC <= '1'; rf_wren <= '1';
 			when STORE => write <= '1'; sel_addr <= '1'; imm_signed <= '1';

@@ -18,29 +18,35 @@ entity PC is
 end PC;
 
 architecture synth of PC is
-signal reg : integer;
+signal reg : std_logic_vector(15 downto 0);
 begin
-	process(clk)
+	process(clk, reg, reset_n)
 	begin
-		if(rising_edge(clk)) then
-			if(reset_n = '1') then
-				reg <= 0;
+                   if(reset_n = '0') then
+				reg <= (others =>'0');
+                    end if;
 
-			elsif(en = '1') then
+
+		if(rising_edge(clk)) then
+			if(en = '1' and reset_n='1') then
 				if (add_imm = '1') then
-					reg <= reg + to_integer(unsigned(imm));
+					reg <= std_logic_vector(unsigned(reg) + unsigned(imm(15 downto 2) & "00"));
 				
 				elsif (sel_imm = '1') then
-					addr <= imm(13 downto 0) & "00";
+                                      reg <= imm(13 downto 0) & "00";
 
 				elsif (sel_a = '1') then
-					reg <= to_integer(unsigned(a));
+                                       
+					reg(15 downto 0) <= a(15 downto 2) & "00";
 
-				else  reg <= reg + 4;
+				 else  reg <= std_logic_vector(unsigned(reg) + "100");
 				end if;
-
-			else addr <= std_logic_vector(to_unsigned(reg, 32));
-			end if;
-		end if;
+                        end if;
+                 end if;
+	   
+			
+		
 	end process;
+
+       addr <= x"0000" & reg;
 end synth;
